@@ -1,4 +1,6 @@
 import unittest
+import hamming
+
 
 class HammingTest(unittest.TestCase):
     def test_empty_strands(self):
@@ -41,8 +43,3 @@ class HammingTest(unittest.TestCase):
 
     def assertRaisesWithMessage(self, exception):
         return self.assertRaisesRegex(exception, r".+")
-
-
-class hamming:
-    def distance(self, x, y):
-        pass
