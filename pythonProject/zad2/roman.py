@@ -6,6 +6,6 @@ def roman(number):
     result = ''
     for denom, roman_digit in conv:
 
-        result += roman_digit * (number / denom)
+        result += roman_digit * (number // denom)
         number %= denom
     return result
