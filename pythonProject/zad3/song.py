@@ -16,8 +16,8 @@ def sing(x, y=0):
     if isinstance(x, int) and isinstance(y, int):
         if y != 0:
             result = ''
-            for ver in song[x:y]:
-                result += ver
+            for ver in song[x-1:y]:
+                result += ver + '\n\n'
             return result
         else:
             if x == 0:
