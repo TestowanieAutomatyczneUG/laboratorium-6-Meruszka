@@ -32,5 +32,4 @@ def sing(x, y=0):
         raise TypeError
 
 
-if __name__ == "__main__":
-    print("XD")
+
