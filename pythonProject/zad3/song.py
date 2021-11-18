@@ -14,6 +14,8 @@ def sing(x, y=0):
     full = song
     song = song.split('\n\n')
     if isinstance(x, int) and isinstance(y, int):
+        if isinstance(x, bool):
+            raise TypeError
         if x > len(song) or y > len(song) or x < 0 or y < 0 or x is None or y is None:
             raise ValueError
         if y != 0:
@@ -29,3 +31,6 @@ def sing(x, y=0):
     else:
         raise TypeError
 
+
+if __name__ == "__main__":
+    print("XD")
