@@ -14,7 +14,7 @@ def sing(x, y=0):
     full = song
     song = song.split('\n\n')
     if isinstance(x, int) and isinstance(y, int):
-        if x > len(song) or y > len(song):
+        if x > len(song) or y > len(song) or x < 0 or y < 0:
             raise ValueError
         if y != 0:
             result = ''
