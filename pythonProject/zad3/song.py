@@ -23,7 +23,7 @@ def sing(x, y=0):
             if x == 0:
                 return full
             else:
-                return song[x]
+                return song[x-1] + '\n\n'
 
     else:
         raise ValueError
