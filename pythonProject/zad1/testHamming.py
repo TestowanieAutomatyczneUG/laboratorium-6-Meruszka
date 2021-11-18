@@ -1,5 +1,5 @@
 import unittest
-from pythonProject.zad1 import hamming
+import hamming
 
 
 class HammingTest(unittest.TestCase):
